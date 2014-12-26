@@ -12,7 +12,6 @@ import org.springframework.web.servlet.mvc.Controller;
  */
 public class StartController implements Controller{		//Controller 最基本的接口
 
-	@Override
 	public ModelAndView handleRequest(HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
 		System.out.println("controller is running.");
