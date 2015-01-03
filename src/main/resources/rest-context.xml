@@ -12,25 +12,7 @@
     http://www.springframework.org/schema/context/spring-context-3.0.xsd  
     http://www.springframework.org/schema/mvc  
     http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
-
-	<!-- 4. 定义handlerMapping，把请求映射给控制器 -->
-	<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
-		<property name="mappings">
-			<props>
-				<!-- 将浏览器中名为 start.test 的请求，发送给startController 执行 -->
-				<prop key="start.test">startController</prop>
-			</props>
-		</property>
-	</bean>
-
-	<!-- 定义逻辑视图与具体视图文件的映射 -->
-	<!-- UrlBasedViewResolver，使用字符串拼接的方式，将逻辑视图转换为具体视图文件的路径 -->
-	<bean class="org.springframework.web.servlet.view.UrlBasedViewResolver">
-		<property name="prefix" value="/WEB-INF/jsp/"></property>
-		<property name="suffix" value=".jsp"></property>
-	</bean>
-
-	<bean id="startController" class="com.roadom.controller.StartController">
-	</bean>
+	
+	
 
 </beans>
